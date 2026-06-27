@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Contact Us{% endblock %}
+{% block content %}
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 mb-4">
+        <h1>Get in Touch</h1>
+        <p class="lead">Free initial consultation.</p>
+        <div class="mt-4">
+          <p><i class="fas fa-phone fa-fw" style="color:var(--gold);"></i> (212) 555-0199</p>
+          <p><i class="fas fa-envelope fa-fw" style="color:var(--gold);"></i> info@sterlinglaw.com</p>
+          <p><i class="fas fa-map-marker-alt fa-fw" style="color:var(--gold);"></i> 123 Justice Drive, Suite 500, NY</p>
+        </div>
+        <a href="https://wa.me/12125550199" class="btn btn-gold btn-lg mt-4" target="_blank"><i class="fab fa-whatsapp me-2"></i> Chat on WhatsApp</a>
+      </div>
+      <div class="col-lg-7">
+        <div class="card p-4 shadow-sm">
+          <form method="POST" class="contact-form">
+            <div class="mb-3"><label for="name" class="form-label">Full Name *</label><input type="text" class="form-control" id="name" name="name" required></div>
+            <div class="mb-3"><label for="email" class="form-label">Email *</label><input type="email" class="form-control" id="email" name="email" required></div>
+            <div class="mb-3"><label for="message" class="form-label">Your Case *</label><textarea class="form-control" id="message" name="message" rows="5" required></textarea></div>
+            <button type="submit" class="btn btn-gold btn-lg w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
